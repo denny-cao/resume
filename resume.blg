@@ -1,0 +1,9 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'resume.blg'
+[85] biber:340> INFO - === Fri Mar 10, 2023, 20:47:10
+[117] Biber.pm:418> INFO - Reading 'resume.bcf'
+[202] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
+[217] bbl.pm:654> INFO - Writing 'resume.bbl' with encoding 'UTF-8'
+[217] bbl.pm:757> INFO - Output to resume.bbl
+[217] Biber.pm:130> WARN - The file 'resume.bcf' does not contain any citations!
+[218] Biber.pm:132> INFO - WARNINGS: 1
