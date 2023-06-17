@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.6.5, 3 Nov 2022) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[9pt,letterpaper,ragged2e,withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and packages.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=.75cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\definecolor{color1}{HTML}{40513B}
+\definecolor{color2}{HTML}{609966}
+\definecolor{color3}{HTML}{9DC08B}
+\definecolor{color4}{HTML}{EDF1D6}
+\colorlet{name}{black}
+\colorlet{tagline}{color1}
+\colorlet{heading}{color1}
+\colorlet{headingrule}{color3}
+\colorlet{subheading}{color2}
+\colorlet{accent}{color1}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\small}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{pubs-num}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{DENNY CAO}
+\tagline{Senior at Julia R. Masterman High School}
+%% You can add multiple photos on the left or right
+\photoL{2.0cm}{profile}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{dennycaopersonal@gmail.com}
+  \phone{(267) 269-3255}
+  \github{denny-cao}
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+  %%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.55}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+\cvsection{Extra-Curriculars}
+
+\cvevent{SLAM Robotics}{Marketing \& Fundraising Manager/Programming Lead}{2019 --- Present}{}
+\begin{itemize}
+\item Lead a team of 5 to rebrand team, making a new website, and creating a new logo
+\item Write documentation for the team's codebase for new members
+\item Manage team's social media accounts
+\item Helped organize BuildIt First Tech Challenge workshop and parent open house to foster parent involvement
+\item Programmed the robot's autonomous and teleop code using Java and OpenCV to detect AprilTags
+\item Reached Pennsylvania State Championship in 2023
+\end{itemize}
+
+\divider
+
+\cvevent{Programming Club}{Co-president}{2021 --- Present}{}
+\begin{itemize}
+\item Teach Python and programming concepts to peak of 30 students
+\item Work on projects such as an AI that plays ultimate tic-tac-toe and a GeoGuessr solver
+\end{itemize}
+
+\divider
+
+\cvevent{TILT Teen Photo}{}{2021-Present}{}
+\begin{itemize}
+\item Learn about mediums of art including photography and printmaking
+\item Exhibit work at the TILT Institute for the Contemporary Image
+\end{itemize}
+
+\divider
+
+\cvevent{Tutoring}{}{2017-Present}{}
+\begin{itemize}
+\item Tutor for students at school from middle school to high school for NHS
+\item Instructor for Root2Success, an organization started at Masterman to bring advanced mathematics to underserved students throughout Philadelphia
+\item Tutor at-risk students online through UPchieve
+\item Assisted Mr. Tannen tutor algebra, precalculus, and calculus
+\end{itemize}
+
+\cvsection{Work Experience}
+
+\cvevent{Web Developer}{Philadelphia Trail Club}{2022-Present}{}
+\begin{itemize}
+    \item Renovating website to be more accessible for senior citizens
+    \item Using Salesforce to handle database
+\end{itemize}
+
+\divider
+
+\cvevent{Cashier/Waiter}{}{2020-2021}{}
+Worked at family restaurant and mother's nail salon part-time
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Summer Programs}
+
+\cvevent{GRASP Lab Internship}{University of Pennsylvania}{2022}{}
+Researched extrinsic contact estimation with graduate student in PAL Group and DAIR Lab
+
+\divider
+
+\cvevent{MITES Semester (MOSTEC)}{Massachusetts Institute of Technology}{2022}{}
+\begin{itemize}
+    \item Built robotic companion and guide dog for the blind using Bluetooth to sync with an Android phone that pushes GPS and goal coordinates
+    \item Wrote article about the future and implications of robotics, receiving Honorable Mention for Best of MOSTEC Science Writing
+\end{itemize}
+
+\divider
+
+\cvevent{CBK Summer}{WorkReady}{2021}{} 
+Created social impact website using HTML/CSS/JS to spread awareness about at-risk students
+
+\cvsection{Competitions}
+
+\cvachievement{\faTrophy}{2023 Wharton Investment Competition Semifinalist}{One of 55 out of nearly 1,400 teams competing in 53 countries}
+
+\divider
+
+\cvachievement{\faCalculator}{2023 MathWorks Math Modeling Challenge}{Created Vector Autoregression (VAR) model to predict future sales of e-bikes}
+
+\divider
+
+\cvachievement{\faHeartbeat}{6:41 Mile PR}{After a year of running, I ran a sub-7 mile!}
+
+\cvsection{College Courses}
+\textbf{University of Pennsylvania:} MATH 1410: Calulus III, MATH 1700: Ideas in Mathematics, MGMT004: Work, Balance, and Inequality, FNCE0002: Essentials of Personal Finance
+\smallskip
+
+\textbf{Community College of Philadelphia:} MATH 163: Discrete Mathematics 1, MATH 263: Discrete Mathematics 2
+
+\cvsection{Interests}
+
+\textbf{Sports:} Indoor \& Outdoor Track (2021 --- Present), JV Ultimate Frisbee (2019 --- 2021), Varsity Volleyball (2019 --- 2020)
+\smallskip
+
+\textbf{Music:} Piano, Orchestra (Violin II 2017 --- 2022)
+\smallskip
+
+\textbf{Hobbies:} Programming, Videography and Photography
+
+%% Supports X.5 values.
+
+%% Yeah I didn't spend too much time making all the
+%% spacing consistent... sorry. Use \smallskip, \medskip,
+%% \bigskip, \vspace etc to make adjustments.
+
+\end{paracol}
+
+
+\end{document}
