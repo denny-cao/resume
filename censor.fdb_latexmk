@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1688510337 "/home/akkaro/resume/resume.tex" "resume.pdf" "resume" 1688510337
-  "/home/akkaro/resume/resume.tex" 1688510337 9975 6e7d6b274e47233f5e3523427a7b7318 ""
+["pdflatex"] 1688008472 "/home/akkaro/resume/censor.tex" "censor.pdf" "censor" 1688008472
+  "/home/akkaro/resume/censor.tex" 1688008472 10016 ade1d60237eebd9a9a8f565a45caa8ce ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -87,11 +87,11 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1666161220 4595883 1a8137d784f6ac4a90cecb4bdd05a7cf ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1666161259 3058865 e4f58d72146e9845b97136b6e6ac75ce ""
   "/usr/local/texlive/2022/texmf.cnf" 1666161215 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "resume.aux" 1688510337 1169 8e822fc92e709af71863e6713809dc0c "pdflatex"
-  "resume.out" 1688510337 471 4634d1a1ed37c50056b33029fd113425 "pdflatex"
-  "resume.tex" 1688510337 9975 6e7d6b274e47233f5e3523427a7b7318 ""
+  "censor.aux" 1688008472 1169 8e822fc92e709af71863e6713809dc0c "pdflatex"
+  "censor.out" 1688008472 471 4634d1a1ed37c50056b33029fd113425 "pdflatex"
+  "censor.tex" 1688008472 10016 ade1d60237eebd9a9a8f565a45caa8ce ""
   (generated)
-  "resume.aux"
-  "resume.log"
-  "resume.out"
-  "resume.pdf"
+  "censor.aux"
+  "censor.log"
+  "censor.out"
+  "censor.pdf"
